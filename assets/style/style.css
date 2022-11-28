@@ -998,6 +998,10 @@ main .contact {
   }
 }
 @media screen and (max-width: 780px) {
+  .nav_wrapper.open .hamburger {
+    right: 20px;
+  }
+
   section:not(:first-child) {
     padding: 98px 0;
   }
