@@ -1,0 +1,255 @@
+// @media screen and (max-width: 1450px) {
+//     .news_slider_wrapper {
+//         max-width: 770px;
+//     }
+// }
+@media screen and (max-width: 1160px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav_wrapper.open .hamburger {
+        position: fixed;
+        right: 40px;
+    }
+    
+    .nav_wrapper .nav_header {
+        overflow: hidden;
+        display: flex;
+        position: fixed;
+        background:  linear-gradient(243.43deg, rgb(126, 90, 255) 16.9%, rgb(85, 183, 255) 83.27%);
+        height: 0;
+        top: 0;
+        left:0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        z-index: 1;
+        transition: all .5s ease;
+
+        .nav_menu {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            width: 80%;
+        }
+
+        .menu_item{
+            border: 1px solid #fff;
+            padding: 71px 15px 60px;
+            text-align: center;
+            width: 100%;
+            &:hover {
+                transform: scale(1);
+                background-color: #7E5AFF;
+            }
+            
+
+
+            a {
+                font-size: 51px;
+                &::before {
+                    content: none;
+                }
+            }
+        } 
+
+        .social_media {
+            max-width: 100%;
+            gap: 60px;
+    
+            .social_media_item {
+                width: 80px;
+                height: 80px;
+                padding: 50px;  
+    
+                  &:hover {
+                    transform: scale(1);
+                    background-color: #7E5AFF;
+                }
+        
+                a {
+                    font-size: 50px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                }
+            }
+         
+        }
+    }
+
+    .nav_wrapper.open .nav_header {
+        height: 100vh;
+        transition: all .5s ease;
+    }
+
+    .news {
+        .slick-arrow {
+            img {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        .article_title {
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            word-break: break-word;
+            white-space: normal;
+        }
+    }
+       
+  
+
+    .footer {
+        .nav_wrapper {
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-direction: column;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+    }
+  
+   
+
+}
+    
+
+@media screen and (max-width: 780px) {
+
+    section {
+       
+
+        &:not(:first-child) {
+            padding: 98px 0;
+        }
+    }       
+    .title {
+        font-size: 25px;
+    }
+    .home {
+        .slick-dots {
+            position: static;
+            flex-direction: row;
+            margin: 160px 0 0;
+
+        }
+
+        .about_text {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+
+    .projects {
+        .section_title {
+            margin-bottom: 30px;
+        }
+        .projects_block {
+            flex-direction: column;
+
+            &:first-of-type {
+                margin-bottom: 55px;
+            }
+            &:last-of-type {
+              flex-direction: column-reverse;
+            }
+        }
+
+        .button {
+            margin-bottom: 33px;
+        }
+
+        .text_content {
+            margin: 30px 0;
+        }
+
+        .img_wrapper_left, .img_wrapper_right {
+            &:before {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    }
+
+    #gallery {
+        padding: 60px 0;
+    }
+    .gallery {
+       
+        .section_title {
+            margin-bottom: 30px;
+        }
+        .gallery_grid {
+            grid-template-columns: repeat(2,50%);
+            grid-auto-rows: auto;
+            gap: 4px;
+        }
+    }
+
+    .news {
+        .article_title {
+            font-size: 20px;
+        }
+        .section_title {
+            margin-bottom: 30px;
+        }
+
+      
+    }
+
+ 
+
+    .contact {
+        .contact_wrapper {
+            min-width: 333px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact_block {
+            padding: 62px 21px;
+            bottom: -188px;
+
+        }
+
+        .form {
+            .button {
+                margin: 30px auto;
+            }
+
+            .input {
+                width: 100%;
+            }
+        }
+
+        .contact_info {
+            gap: 10px;
+        }
+
+     
+    }
+    
+
+    .footer {
+      padding: 215px 0 40px;
+    }
+  
+  
+}
+
+//, , ., 

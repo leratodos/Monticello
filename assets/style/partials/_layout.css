@@ -1,0 +1,41 @@
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/about/tu-tram-pham-202263 1.png"), linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section:not(:first-child) {
+  padding: 150px 0;
+}
+
+.news {
+  width: 100%;
+  background-image: url("../img/news/city 2 @2x 1.png"), linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  width: 100%;
+  background-image: url("../img/footer/scott-webb-176434 2.svg"), linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

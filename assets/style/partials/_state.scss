@@ -1,0 +1,85 @@
+@use 'vars';
+@use 'mixin';
+
+
+.menu_item {
+    a {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            left: -20px;
+            top: 4px;
+        }
+    }
+
+    .active {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            left: -20px;
+            top: 4px;
+            background-color: #fff;
+           
+        }
+    }
+}
+
+.slick-dots li.slick-active button {
+    background-color: #FFFFFF;
+}
+
+.menu_item {
+    &:hover{
+        transform: scale(1.2);
+
+    }
+}
+
+
+.social_media_item {
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.button {
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.article {
+    &:hover {
+        transform: scale(.95);
+    }
+}
+
+.arrow_btn {
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.slick-prev {
+    &:hover {
+        transform: scale(1.2) translateY(-40%);
+    }
+}
+
+.slick-next {
+    &:hover {
+        transform: scale(1.2) translateY(-40%);
+    }
+}
+

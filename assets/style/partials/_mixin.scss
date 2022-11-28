@@ -1,0 +1,8 @@
+@mixin text-styling($ff, $fw, $fz, $lh, $color-value, $tt) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color-value;
+    text-transform: $tt;
+}
